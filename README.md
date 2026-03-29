@@ -1,9 +1,11 @@
-# VERIDECT — Fake News Classifier
+# VERIDECT — Fake News Classifier [![GitHub](https://img.shields.io/github/license/n-max-star/fake-news-classifier)](https://github.com/n-max-star/fake-news-classifier) [![Backend Tests](https://github.com/n-max-star/fake-news-classifier/actions/workflows/backend.yml/badge.svg)](https://github.com/n-max-star/fake-news-classifier/actions)
 
 Full-stack fake news detection app.  
 **Model:** Logistic Regression + TF-IDF (50k features, bigrams)  
 **Dataset:** FakeNewsNet — GossipCop + PolitiFact  
 **Performance:** Accuracy 81.4% · ROC-AUC 87.1% · 5-Fold CV AUC 86.0%
+
+**Source Code:** https://github.com/n-max-star/fake-news-classifier
 
 ---
 
@@ -17,16 +19,10 @@ fakenews-app/
 │   ├── metrics.json         ← model stats    ← COPY THIS IN
 │   ├── requirements.txt
 │   └── README.md
-└── frontend/
-    ├── src/
-    │   ├── App.jsx          ← main page
-    │   ├── components/
-    │   │   ├── ResultCard.jsx     ← prediction result UI
-    │   │   ├── ModelStats.jsx     ← collapsible stats panel
-    │   │   └── BatchAnalyzer.jsx  ← batch classify UI
-    │   ├── hooks/usePredict.js    ← React hooks
-    │   └── services/api.js        ← axios API layer
-    └── public/index.html
+├── frontend/
+│   ├── package.json
+│   └── src/
+└── .gitignore
 ```
 
 ---
